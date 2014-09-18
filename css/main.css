@@ -1,6 +1,10 @@
+body{
+	background:blue;
+}
 .wrapper{
 	background:red;
 }
 li{
 	display: none;
 }
+
