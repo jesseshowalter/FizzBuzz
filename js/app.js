@@ -11,6 +11,7 @@ $(document).ready(function(){
 	    	$('ul').append("<li>Fizz Buzz!</li>").fadeIn(5000);;
 	    }else if (i%3 === 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	    	$('ul').append("<li>Fizz</li>").fadeIn(5000);;
 	    	// console.log("Fizz");
 	    }else if (i%5 === 0) {
@@ -21,6 +22,11 @@ $(document).ready(function(){
 	    }else if (i%5 === 0) {
 	    	$('ul').append("<li>Buzz!</li>").fadeIn(5000);;
 >>>>>>> gh-pages
+=======
+	    	$('ul').append("<li>Fizz</li>").fadeIn(5000);;
+	    }else if (i%5 === 0) {
+	    	$('ul').append("<li>Buzz</li>").fadeIn(5000);;
+>>>>>>> FETCH_HEAD
 	    }else {
 	    	$('ul').append("<li>" + i + "</li>").fadeIn(5000);;
 	    };
