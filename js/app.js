@@ -19,3 +19,9 @@ $(document).ready(function(){
 	}
 
 });
+
+// use a function
+// user prompted to enter number
+// 1 named function tha takes inputed integer as argument and runs th fizz buzz
+// convert inputed value from string to number
+// create conditonal if number is NaN, alert for a number
