@@ -10,9 +10,9 @@ $(document).ready(function(){
 	    if(i%15 === 0){
 	    	$('ul').append("<li>Fizz Buzz!</li>").fadeIn(5000);;
 	    }else if (i%3 === 0) {
-	    	$('ul').append("<li>Fizz!</li>").fadeIn(5000);;
+	    	$('ul').append("<li>Fizz</li>").fadeIn(5000);;
 	    }else if (i%5 === 0) {
-	    	$('ul').append("<li>Buzz!</li>").fadeIn(5000);;
+	    	$('ul').append("<li>Buzz</li>").fadeIn(5000);;
 	    }else {
 	    	$('ul').append("<li>" + i + "</li>").fadeIn(5000);;
 	    };
