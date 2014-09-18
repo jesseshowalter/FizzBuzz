@@ -8,21 +8,13 @@ $(document).ready(function(){
 	// Conditional Logic for fizz an buzz and fizzbuzz
 	for(var i = 1; i <= userChoice; i++){
 	    if(i%15 === 0){
-	    	$('ul').append("<li>Fizz Buzz!</li>").fadeIn(5000);;
+	    	$('ul').append("<li>Fizz Buzz!</li>");
 	    }else if (i%3 === 0) {
-<<<<<<< HEAD
-	    	$('ul').append("<li>Fizz</li>").fadeIn(5000);;
-	    	// console.log("Fizz");
+	    	$('ul').append("<li>Fizz</li>")
 	    }else if (i%5 === 0) {
-	    	$('ul').append("<li>Buzz</li>").fadeIn(5000);;
-	    	// console.log("Buzz");
-=======
-	    	$('ul').append("<li>Fizz!</li>").fadeIn(5000);;
-	    }else if (i%5 === 0) {
-	    	$('ul').append("<li>Buzz!</li>").fadeIn(5000);;
->>>>>>> gh-pages
+	    	$('ul').append("<li>Buzz!</li>");
 	    }else {
-	    	$('ul').append("<li>" + i + "</li>").fadeIn(5000);;
+	    	$('ul').append("<li>" + i + "</li>");
 	    };
 	}
 
