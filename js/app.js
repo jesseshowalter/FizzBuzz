@@ -4,35 +4,39 @@
 // create conditonal if number is NaN, alert for a number
 
 
+window.onload = function (){
 
+	var fbString = '';
+	var fbContainer = document.getElementById('fbContainer');
 
-// Allow user to select number to play by
-var userChoice = prompt("Choose a number to play \"FizzBuzz\"");
-// var num = parseInt(userChoice, 10);
-var num = (+userChoice)
-// var valueIsNaN = (num !== num)
+	function runGame(num){
 
+		num = +(num);
 
-var runGame = function(num){
-	if(valueIsNaN === true){
-		alert("Sorry, This is not a number, please try again and choose an actual integer number!");
-		prompt("Choose a number to play \"FizzBuzz\"");
-	}
+		while(num == NaN || num % 1 != 0){
+			num = prompt("Hey, that's not a number. Try again please.");
+		}
 
-	for(var i = 1; i <= num; i++){
-	    if(i%15 === 0){
-	    	$('ul').append("<li>Fizz Buzz!</li>");
-	    }else if (i%3 === 0) {
-	    	$('ul').append("<li>Fizz</li>");
-	    }else if (i%5 === 0) {
-	    	$('ul').append("<li>Buzz</li>");
-	    }else {
-	    	$('ul').append("<li>" + i + "</li>");
-	    };
-	}
+		for(var i = 1; i <= num; i++){
+		    if(i%15 === 0){
+		    	fbString += "<li>Fizz Buzz!!!</li>";
+		    }
+
+		    else if (i%3 === 0) {
+		    	fbString += "<li>Fizz</li>";
+		    }
+
+		    else if (i%5 === 0) {
+		    	fbString += "<li>Buzz</li>";
+		    }
+
+		    else {
+		    	fbString += "<li>" + i + "</li>";
+		    }
+		};
+		
+		fbContainer.innerHTML = fbString;
+	};
+
+	runGame(prompt("Choose a number to play \"FizzBuzz\""));
 };
-
-runGame();	
-
-
-
