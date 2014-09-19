@@ -1,5 +1,3 @@
-
-
 // Allow user to select number to play by
 var userChoice = prompt("Choose a number to play \"FizzBuzz\"");
 var num = parseInt(userChoice, 10);
