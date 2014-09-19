@@ -38,5 +38,6 @@ window.onload = function (){
 		fbContainer.innerHTML = fbString;
 	};
 
+
 	runGame(prompt("Choose a number to play \"FizzBuzz\""));
 };

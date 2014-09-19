@@ -80,6 +80,7 @@ h1{
 }
 ul{
 	margin:0 auto;
+	min-height: 350px;
 }
 li{
 	width:19%;
@@ -92,6 +93,9 @@ li{
 	font-size: 1.05rem;
 	text-transform: uppercase;
 	border-bottom: 3px solid #969696;
+	-webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	        transition: all 0.5s;
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 	        border-radius: 3px;
