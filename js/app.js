@@ -3,9 +3,17 @@
 // Allow user to select number to play by
 var userChoice = prompt("Choose a number to play \"FizzBuzz\"");
 var num = parseInt(userChoice, 10);
+var valueIsNaN = (num !== num)
 
 
 var runGame = function(num){
+
+	// while(valueIsNaN === false){
+	// 	// alert("Sorry, This is not a number, please try again and choose an actual integer number!");
+	// 	// prompt("Choose a number to play \"FizzBuzz\"");
+	// 	console.log("test");
+	// }
+
 	for(var i = 1; i <= userChoice; i++){
 	    if(i%15 === 0){
 	    	$('ul').append("<li>Fizz Buzz!</li>");
@@ -20,10 +28,7 @@ var runGame = function(num){
 };
 
 
-if(isNaN(num)){
-	alert("Sorry, This is not a number, please try again and choose an actual integer number!");
-	userChoice;
-};
+
 runGame();	
 
 
