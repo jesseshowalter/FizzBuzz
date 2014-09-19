@@ -1,14 +1,11 @@
 
-var name = "Jesse";
 
 // Allow user to select number to play by
 var userChoice = prompt("Choose a number to play \"FizzBuzz\"");
-// Alert them of the game starting
-alert("You Chose to play FizzBuzz up to " + userChoice + " , Ready to get started?");
+var num = parseInt(userChoice, 10);
 
-var runGame = function(numChoice){
-	numChoice = +userChoice;
-	// Conditional Logic for fizz an buzz and fizzbuzz
+
+var runGame = function(num){
 	for(var i = 1; i <= userChoice; i++){
 	    if(i%15 === 0){
 	    	$('ul').append("<li>Fizz Buzz!</li>");
@@ -20,11 +17,16 @@ var runGame = function(numChoice){
 	    	$('ul').append("<li>" + i + "</li>");
 	    };
 	}
-	
-	console.log("Game has been run " + numChoice);
-	return numChoice;
 };
-runGame();
+
+
+if(isNaN(num)){
+	alert("Sorry, This is not a number, please try again and choose an actual integer number!");
+	userChoice;
+};
+runGame();	
+
+
 
 
 
